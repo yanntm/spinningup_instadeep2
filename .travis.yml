@@ -11,8 +11,10 @@ script:
     - pip3 install -e .
     - pwd
     - ls
+    - cd
     - cd home/travis/build/EmpereurCC/spinningup_instadeep2/gym
     - python3 setup.py install
+    - cd
     - cd home/travis/build/EmpereurCC/spinningup_instadeep2/PycoGYM/gym_pyco
     - python3 setup.py install
     - export PYTHONPATH="${PYTHONPATH}:home/travis/build/EmpereurCC/spinningup_instadeep2/PycoGYM/gym_pyco"

@@ -9,9 +9,9 @@ before_install:
     
 script:
     - pip3 install -e .
+    - cd
     - pwd
     - ls
-    - cd
     - cd home/travis/build/EmpereurCC/spinningup_instadeep2/gym
     - python3 setup.py install
     - cd

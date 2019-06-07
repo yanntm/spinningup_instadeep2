@@ -20,6 +20,6 @@ script:
     - export PYTHONPATH="${PYTHONPATH}:home/travis/build/EmpereurCC/spinningup_instadeep2/PycoGYM/gym_pyco"
 #    - python3 -c "import mujoco_py"
     - python3 -c "import spinup"
-    - python3 home/travis/build/EmpereurCC/spinningup_instadeep2/spinup/run.py ppo_pyco --env warehouse_manager-v0 --num_cpu 1
+    - python3 build/EmpereurCC/spinningup_instadeep2/spinup/run.py ppo_pyco --env warehouse_manager-v0 --num_cpu 1
 
     

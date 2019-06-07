@@ -1,0 +1,2 @@
+Epoch	AverageEpRet	StdEpRet	MaxEpRet	MinEpRet	EpLen	AverageVVals	StdVVals	MaxVVals	MinVVals	TotalEnvInteracts	LossPi	LossV	DeltaLossPi	DeltaLossV	Entropy	KL	ClipFrac	StopIter	Time
+0	1.125	0.59947896	2.0	0.0	500.0	3.8172123	0.09644601	4.053785	3.558461	4000	0.85214406	9.799232	-0.09312987	-8.967539	1.5575143	0.4307356	0.425	0.0	8.814283847808838

@@ -1,0 +1,15 @@
+cloudpickle==0.5.2
+gym[atari,box2d,classic_control]>=0.10.8
+ipython
+joblib
+matplotlib
+mpi4py
+numpy>=1.9
+pandas
+pytest
+psutil
+scipy
+seaborn==0.8.1
+six
+tensorflow>=1.8.0
+tqdm

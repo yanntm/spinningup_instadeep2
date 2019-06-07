@@ -17,7 +17,7 @@ script:
     - cd
     - cd build/EmpereurCC/spinningup_instadeep2/PycoGYM/gym_pyco
     - python3 setup.py install
-    - export PYTHONPATH="${PYTHONPATH}:home/travis/build/EmpereurCC/spinningup_instadeep2/PycoGYM/gym_pyco"
+    - export PYTHONPATH="${PYTHONPATH}:build/EmpereurCC/spinningup_instadeep2/PycoGYM/gym_pyco"
 #    - python3 -c "import mujoco_py"
     - python3 -c "import spinup"
     - cd

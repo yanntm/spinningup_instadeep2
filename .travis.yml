@@ -9,7 +9,18 @@ before_install:
     
 script:
     - pip3 install -e .
+    - cd
+    - pwd
+    - ls
+    - cd build/EmpereurCC/spinningup_instadeep2/gym
+    - python3 setup.py install
+    - cd
+    - cd build/EmpereurCC/spinningup_instadeep2/PycoGYM/gym_pyco
+    - python3 setup.py install
+    - export PYTHONPATH="${PYTHONPATH}:build/EmpereurCC/spinningup_instadeep2/PycoGYM/gym_pyco"
 #    - python3 -c "import mujoco_py"
     - python3 -c "import spinup"
-    - python3 -m pytest
+    - cd
+    - python3 build/EmpereurCC/spinningup_instadeep2/spinup/run.py ppo_pyco --env warehouse_manager-v0 --num_cpu 1
+
     

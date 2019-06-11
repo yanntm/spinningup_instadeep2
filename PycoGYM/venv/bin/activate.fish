@@ -29,8 +29,8 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/clement/PycharmProjects/PycoGYM/venv"
-
+#set -gx VIRTUAL_ENV "/home/travis/build/EmpereurCC/spinningup_instadeep2/PycoGYM/venv"
+set -gx VIRTUAL_ENV ""
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
 

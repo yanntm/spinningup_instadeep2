@@ -8,7 +8,8 @@ from spinup.utils.mpi_tf import MpiAdamOptimizer, sync_all_params
 from spinup.utils.mpi_tools import mpi_fork, mpi_avg, proc_id, mpi_statistics_scalar, num_procs
 from tensorflow.python import debug as tf_debug
 
-FLAGS = '/home/clement/spinningup/tensorboard'
+#FLAGS = '/home/clement/spinningup/tensorboard'
+FLAGS = '/home/travis/build/EmpereurCC/spinningup_instadeep2/tensorboard'
 
 class PPOBuffer:
     """
@@ -396,7 +397,8 @@ def ppo_pyco(env_fn, actor_critic=core.mlp_actor_critic, ac_kwargs=dict(), seed=
         update(epoch)
 
         saver = tf.train.Saver()
-        save_path = saver.save(sess, "/home/clement/Documents/spinningup/trained_params/model.ckpt")
+        #save_path = saver.save(sess, "/home/clement/Documents/spinningup/trained_params/model.ckpt")
+        save_path = saver.save(sess, "/home/travis/build/EmpereurCC/spinningup_instadeep2/trained_params/model.ckpt")
 
         #If you want to reload saved variables :
         # with tf.Session() as sess:

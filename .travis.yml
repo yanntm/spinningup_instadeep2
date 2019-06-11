@@ -11,7 +11,7 @@ before_script:
  - ls -R
  - eval "$($HOME/anaconda3/bin/conda shell.bash hook)"
  - conda init
- - conda -y update conda
+ - conda update -y conda
  - conda create -y -n cc python=3.6 anaconda || true
  - conda activate cc
  - conda install -y tensorflow setuptools seaborn mpi4py cloudpickle joblib tqdm

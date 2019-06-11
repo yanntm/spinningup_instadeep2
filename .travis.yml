@@ -14,6 +14,7 @@ before_script:
  - conda create -y -n cc python=3.6 anaconda || true
  - conda activate cc
  - conda install -y tensorflow setuptools seaborn mpi4py cloudpickle joblib tqdm
+ - cd -
     
 script:
    - conda activate cc

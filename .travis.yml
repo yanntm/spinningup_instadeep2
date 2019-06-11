@@ -20,4 +20,8 @@ script:
    - ls -R
    
 
+cache:
+  directories:
+    - '$HOME/anaconda3'
+
 
